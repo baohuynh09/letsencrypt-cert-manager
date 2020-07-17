@@ -1,0 +1,63 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: foobar
+  labels:
+    app: foobar
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: foobar
+  template:
+    metadata:
+      labels:
+        app: foobar
+    spec:
+      containers:
+      - name: foobar
+        image: gcr.io/google-samples/hello-app:1.0
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: foobarservice
+spec:
+  #type: LoadBalancer
+  selector:
+    app: foobar
+  ports:
+    - name: http
+      protocol: 'TCP'
+      port: 80
+      targetPort: 8080
+      #nodePort: 30001
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: foobar
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/tls-acme: "true"
+spec:
+  tls:
+  - hosts:
+    #- foo.example.com
+    - app.baohuynh.tk
+    secretName: foobar
+  rules:
+  #- host: foo.example.com
+  - host: app.baohuynh.tk
+    http:
+      paths:
+      - path: "/"
+        backend:
+          serviceName: foobarservice
+          servicePort: http

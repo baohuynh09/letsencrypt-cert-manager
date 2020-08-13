@@ -19,8 +19,8 @@ kubectl apply -f cert-manager-deployment/cert-manager.yaml
 
 ### A3. Deploy Application with ingress resources
 ```sh
-kubectl apply -f application/app-deployment.yaml
-kubectl apply -f application/cert-issuers.yaml
+kubectl apply -f public-domain/application/app-deployment.yaml
+kubectl apply -f public-domain/application/cert-issuers.yaml
 ```
 
 ### A4. Register free domain app.baohuyh.tk
@@ -31,7 +31,7 @@ https://my.freenom.com/clientarea.php?action=domaindetails&id=1095616933
 
 ### A5. Checking Flow for cert-manager
 - ###### Create ClusterIssuer / Issuer (CRD from cert-manager)
-  
+
   Act as bridge between ACME server <--> client in the process of getting SSL certificate
    ```sh
    apiVersion: cert-manager.io/v1alpha2
@@ -139,9 +139,9 @@ spec:
           servicePort: http
 ```
 
-- ###### B2.5 Reference
+### B2.5 Reference
 https://itnext.io/deploying-tls-certificates-for-local-development-and-production-using-kubernetes-cert-manager-9ab46abdd569
 
 
-- ###### B2.6 Cert-manager workflow for private Domain
+### B2.6 Cert-manager workflow for private Domain
 ![alt text](https://github.com/baohuynh09/letsencrypt-cert-manager/blob/master/images/cert-manager-workflow-private-domain.png?raw=true)

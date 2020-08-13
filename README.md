@@ -139,5 +139,9 @@ spec:
           servicePort: http
 ```
 
-- ###### B2.5 Cert-manager workflow for private Domain
+- ###### B2.5 Reference
+https://itnext.io/deploying-tls-certificates-for-local-development-and-production-using-kubernetes-cert-manager-9ab46abdd569
+
+
+- ###### B2.6 Cert-manager workflow for private Domain
 ![alt text](https://github.com/baohuynh09/letsencrypt-cert-manager/blob/master/images/cert-manager-workflow-private-domain.png?raw=true)

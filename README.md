@@ -69,7 +69,7 @@ https://my.freenom.com/clientarea.php?action=domaindetails&id=1095616933
 - https://itnext.io/automated-tls-with-cert-manager-and-letsencrypt-for-kubernetes-7daaa5e0cae4
 
 ### A7. Cert-manager workflow for Public Domain
-![alt text](https://github.com/baohuynh09/letsencrypt-cert-manager/blob/master/images/cert-manager-workflow-public-domain.png?raw=true)
+![alt text](https://github.com/baohuynh09/letsencrypt-cert-manager/blob/master/images/cert-manager-workflow-public-domain-1.png?raw=true)
 
 ---
 

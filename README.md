@@ -68,9 +68,12 @@ https://my.freenom.com/clientarea.php?action=domaindetails&id=1095616933
 - https://gist.github.com/snormore/c7c2935d746531ed0d75064a6ad6058e
 - https://itnext.io/automated-tls-with-cert-manager-and-letsencrypt-for-kubernetes-7daaa5e0cae4
 
+### A7. Cert-manager workflow for Public Domain
+![alt text](https://github.com/baohuynh09/letsencrypt-cert-manager/blob/master/images/cert-manager-workflow-public-domain.png?raw=true)
+
 ---
 
-# B. Deploy self-signed CA and using cert-manager for domain with self-signed SSL
+# B. Deploy self-signed CA and using cert-manager for domain with self-signed SSL (HTTPS local development)
 
 ### B1. Understanding Terms:
 - **private/internal domain**: k8s-dashboard.baohuynh.tk
@@ -136,5 +139,5 @@ spec:
           servicePort: http
 ```
 
-- ###### B2.5 Cert-manager workflow
-![alt text](https://github.com/baohuynh09/letsencrypt-cert-manager/blob/master/images/cert-manager-workflow.png?raw=true)
+- ###### B2.5 Cert-manager workflow for private Domain
+![alt text](https://github.com/baohuynh09/letsencrypt-cert-manager/blob/master/images/cert-manager-workflow-private-domain.png?raw=true)

@@ -61,3 +61,6 @@ https://my.freenom.com/clientarea.php?action=domaindetails&id=1095616933
     - app.baohuynh.tk
     secretName: foobar
   ```
+
+
+Ref: https://gist.github.com/snormore/c7c2935d746531ed0d75064a6ad6058e

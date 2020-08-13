@@ -63,5 +63,6 @@ https://my.freenom.com/clientarea.php?action=domaindetails&id=1095616933
   ```
 
 
-Ref: https://gist.github.com/snormore/c7c2935d746531ed0d75064a6ad6058e
-     https://itnext.io/automated-tls-with-cert-manager-and-letsencrypt-for-kubernetes-7daaa5e0cae4
+### Reference
+- https://gist.github.com/snormore/c7c2935d746531ed0d75064a6ad6058e
+- https://itnext.io/automated-tls-with-cert-manager-and-letsencrypt-for-kubernetes-7daaa5e0cae4

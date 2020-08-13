@@ -135,3 +135,6 @@ spec:
           serviceName: k8s-dashboard
           servicePort: http
 ```
+
+- ###### B2.5 Cert-manager workflow
+![alt text](https://github.com/baohuynh09/letsencrypt-cert-manager/blob/master/images/cert-manager-workflow.png?raw=true)

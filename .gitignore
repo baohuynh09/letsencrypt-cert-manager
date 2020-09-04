@@ -1,2 +1,5 @@
 .DS_Store
 */.DS_Store
+app-private-domain/create-self-CA-shopee.sh
+app-private-domain/secret-self-signed-ca.yaml
+
